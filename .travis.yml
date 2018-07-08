@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: DhTB9BUHeClhJjPr8lvP+BjKpaKonv/ji5dJvx2+YdWeKexWqVLEF0DxDn3TilxNlLv9GOnU5PhX2IRKpsinbWMJKcU7fgNcfH+1POUhDCpsA9AAUxHzI5QPxHee7AmMuJ6bRcMFuD+2oUEnnXx9JssA4z2V6uSktqy2sj0B9ASytQMec0cywtjA/AH1LGbco3Um4Gfiecz8wIcT8SFnnRKDFsDkxeJzSMyrrT9wYD4rC1sxi6iBJLmgXvD8lLkZUEBEZ46TMSMFLA3w99jYXEOLh7IogloZNd9ouZjRqWqdIPkOW/s0VPCmHJYc11TEZGMgDcQEjCa28nFjLYWncdXg14llFHt9W7PSXBIUbcmshJ20M7FqakNHO3oTq08V8b6LNHEyTMU9h5GGwik9ww+lzU/DGvozdvmlVdePcTCZ6Hiaq4mZdLHm9LK6VVx3/g/GPso75OVBrwKaRMnStTe7feDlib5G6GKZNbrqcUR5QH1B5A6/aQuzMZoSorxxwIvQaDF5d5aY2VQ8JFHPfSVqi1ANkUE4rZYoLpx7zMC3ChFdhiWJZEcSkRC4u0BIzaxnC0WopB2D1CKp6/40BWOT0fUOZcED7AK64xkMO5HwG2jG2rIRy66tyWfzEuBGzTeu9NZl/OxCLiKBPDwbtN9XK42CJfZ5IAie9btvKic=
+  app: tranquil-dawn-71365
+  on:
+    repo: jennifer/react-trello-testing
